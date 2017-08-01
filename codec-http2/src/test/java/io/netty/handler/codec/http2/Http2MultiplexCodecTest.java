@@ -564,10 +564,11 @@ public class Http2MultiplexCodecTest {
      */
     private static final class TestableHttp2MultiplexCodec extends Http2MultiplexCodec {
 
+
         TestableHttp2MultiplexCodec(boolean server, ChannelHandler inboundStreamHandler) {
             super(server, inboundStreamHandler);
         }
-
+/*
         @Override
         public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
             this.ctx = ctx;
@@ -582,6 +583,7 @@ public class Http2MultiplexCodecTest {
         Http2FrameStream newStream0() {
             return new TestHttp2FrameStream();
         }
+        */
     }
 
     private static final class TestHttp2FrameStream implements Http2FrameStream {
